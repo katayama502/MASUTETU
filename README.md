@@ -22,6 +22,32 @@ npm run check:data
 npm run build
 ```
 
+
+## Netlifyで公開する
+
+このリポジトリは `netlify.toml` を同梱しているため、Netlifyに接続すると以下の設定で静的公開できます。
+
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Node.js: `22`
+
+### Git連携で公開する手順
+
+1. Netlifyで「Add new site」→「Import an existing project」を選びます。
+2. このGitリポジトリを選択します。
+3. Build command が `npm run build`、Publish directory が `dist` になっていることを確認します。
+4. Deployを実行します。
+
+### 手元でNetlify用ビルドを確認する
+
+```bash
+npm run check:data
+npm run build
+python3 -m http.server 8888 -d dist
+```
+
+その後、`http://localhost:8888/` を開くと、Netlifyに配置される成果物と同じ内容を確認できます。`dist/` にはNetlifyのドラッグ&ドロップ公開でも使える `_headers` と `_redirects` も生成されます。
+
 ## データ更新方針
 
 1. `src/data/spots.json` に店舗・作家・ランドマーク情報を追加します。
