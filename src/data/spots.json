@@ -1,0 +1,101 @@
+[
+  {
+    "id": "masuda-station",
+    "name": "益田駅前案内所",
+    "kind": "ランドマーク",
+    "district": "駅前エリア",
+    "summary": "旅の起点としてプレイヤーを迎える情報拠点。次の目的地候補や地域イベントを紹介します。",
+    "hours": "9:00-18:00",
+    "url": "https://www.city.masuda.lg.jp/",
+    "artist": "案内キャラクター原案：地域PRチーム",
+    "effect": { "type": "fund", "amount": 600, "label": "旅支度ボーナス" }
+  },
+  {
+    "id": "kakinomoto-shrine",
+    "name": "柿本神社周辺スポット",
+    "kind": "文化",
+    "district": "高津エリア",
+    "summary": "歴史散策の雰囲気を味わえるマス。地域の物語を読んで、文化ポイントを獲得します。",
+    "hours": "散策自由",
+    "url": "https://masudashi.com/",
+    "artist": "背景イラスト：益田歴史スケッチ部",
+    "effect": { "type": "score", "amount": 2, "label": "文化発見" }
+  },
+  {
+    "id": "local-cafe",
+    "name": "駅前まちかどカフェ",
+    "kind": "飲食店",
+    "district": "駅前エリア",
+    "summary": "休憩に立ち寄りたいカフェ枠。おすすめメニューや店主コメントを表示できます。",
+    "hours": "10:00-17:00 / 水休",
+    "url": "https://www.city.masuda.lg.jp/",
+    "artist": "店舗紹介文：カフェ広報担当",
+    "effect": { "type": "item", "item": "まち歩きメモ", "label": "情報収集" }
+  },
+  {
+    "id": "masuda-market",
+    "name": "益田よろず市",
+    "kind": "商店",
+    "district": "商店街エリア",
+    "summary": "地元の食品や日用品を扱う商店マス。季節キャンペーンの掲載に向いています。",
+    "hours": "9:30-19:00",
+    "url": "https://masudashi.com/",
+    "artist": "写真提供：商店街アーカイブ",
+    "effect": { "type": "fund", "amount": 850, "label": "買い物上手" }
+  },
+  {
+    "id": "iwami-airport",
+    "name": "萩・石見空港PRマス",
+    "kind": "交通",
+    "district": "空港エリア",
+    "summary": "市外からの玄関口を紹介する交通マス。観光回遊の導線をゲーム内で表現します。",
+    "hours": "便により変動",
+    "url": "https://hagiiwami.jp/",
+    "artist": "空路アイコン：オリジナル制作",
+    "effect": { "type": "move", "amount": 2, "label": "快速連絡" }
+  },
+  {
+    "id": "craft-studio",
+    "name": "益田クラフト工房",
+    "kind": "作家",
+    "district": "ものづくりエリア",
+    "summary": "地域作家の作品やワークショップ情報を紹介するマス。作品画像と外部リンクを差し替え可能です。",
+    "hours": "11:00-16:00 / 不定休",
+    "url": "https://www.city.masuda.lg.jp/",
+    "artist": "作家情報：益田クラフト工房",
+    "effect": { "type": "score", "amount": 3, "label": "手しごと発見" }
+  },
+  {
+    "id": "matching-hall",
+    "name": "グラントワ周辺アート案内",
+    "kind": "芸術",
+    "district": "文化施設エリア",
+    "summary": "美術・舞台芸術の情報へつなぐ案内マス。公演や展示の告知枠として使えます。",
+    "hours": "施設予定に準拠",
+    "url": "https://www.grandtoit.jp/",
+    "artist": "展示紹介：文化施設連携枠",
+    "effect": { "type": "score", "amount": 4, "label": "アート鑑賞" }
+  },
+  {
+    "id": "masuda-river",
+    "name": "益田川リバーサイド",
+    "kind": "自然",
+    "district": "川沿いエリア",
+    "summary": "川沿いの景観や散歩コースを紹介するマス。穏やかな休息イベントを発生させます。",
+    "hours": "散策自由",
+    "url": "https://masudashi.com/",
+    "artist": "自然音演出：オリジナル制作",
+    "effect": { "type": "fund", "amount": -300, "label": "寄り道休憩" }
+  },
+  {
+    "id": "goal-tour",
+    "name": "益田めぐり達成所",
+    "kind": "ゴール",
+    "district": "周遊達成",
+    "summary": "複数エリアを巡った成果を集計する独自ゴール。文化ポイントと所持金で旅の充実度を判定します。",
+    "hours": "いつでも",
+    "url": "https://www.city.masuda.lg.jp/",
+    "artist": "達成バッジ：オリジナル制作",
+    "effect": { "type": "score", "amount": 5, "label": "周遊達成" }
+  }
+]
